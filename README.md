@@ -322,7 +322,7 @@ triBulles(Tableau T)
                on inverse les valeurs
 ```
 **Une animation qui représente le fonctionnement de l'algorithme :**  
-<img align="center" src="img/Sorting_bubblesort_anim.gif"/>  
+<img align="center" src="Img/Sorting_bubblesort_anim.gif"/>  
 Nous ferons un tri par ordre croissant ce qui donnera : 
 ```python
 val = [5,8,1,9,6,2,4,3,7,5]
