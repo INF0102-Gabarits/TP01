@@ -19,9 +19,11 @@ def fizzBuzz(n):
 n = int(input("Veuillez saisir un nombre: "))
 print(fizzBuzz(n))
 ```
+
+```python
 Veuillez saisir un le nombre: 8
 > 8
-    
+```  
 
 ## Exercice 2:
 Dans cet exercice, vous devez résoudre une équation quadratique de la forme: $ax^2 + bx + c$
