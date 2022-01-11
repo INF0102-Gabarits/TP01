@@ -29,9 +29,6 @@ Le programme commence en demandant à l'utilisateur de saisir la valeur des vari
 
 
 ```python
-import math
-
-
 def resoudreEquation(a, b, c):
     # TODO: Calculer le discriminant et assigner la valeur dans la variable "delta"
 
@@ -78,7 +75,7 @@ Entrez c: 4
 ```    
 
 ## Exercice 3:
-Dans cet exercice vous devez convertir un nombre de secondes en nombres d'années, semaines, jours, heures, minute et secondes. Par exemple, si l'utilisateur entre '633323104' secondes, votre programme devra renvoyé 20 années, 4 semaines, 2 jours, 3 heures, 5 minutes et 4 secondes. Vous pouvez créer d'autres variables pour vous aider.
+Dans cet exercice vous devez convertir un nombre de secondes en nombres d'années, semaines, jours, heures, minute et secondes. Par exemple, si l'utilisateur entre **633323104 secondes**, votre programme devra renvoyé **20 années, 4 semaines, 2 jours, 3 heures, 5 minutes et 4 secondes**. Vous pouvez créer d'autres variables pour vous aider.
 
 PS: On considère qu'une année est composée exactement de 365 jours !
 
@@ -90,41 +87,31 @@ def decomposer(secondes):
     annees = semaines = jours = heures = minutes = 0
 
     # TODO: Assigner à la variable "annees" le nombre d'années
-    annees = secondes // (3600 * 24 * 365)
-    secondes %= 3600 * 24 * 365
 
     # TODO: Assigner à la variable "semaines" le nombre de semaines restantes
-    semaines = secondes // (3600 * 24 * 7)
-    secondes %=  3600 * 24 * 7
+    
 
     # TODO: Assigner à la variable "jours" le nombre de jours restants
-    jours= secondes // (3600 * 24)
-    secondes %= 3600 * 24
+    
 
     # TODO: Assigner à la variable "heures" le nombre d'heures restantes
-    heures = secondes // 3600
-    secondes %= 3600
+
 
     # TODO: Assigner à la variable "minute" le nombre de minutes restantes
-    minutes = secondes // 60
+
 
     # TODO: Assigner à la variable "secondes" le nombre de secondes restantes
-    secondes %= 60
+
 
     # TODO: Afficher le nombres d'années, semaines, jours, heures, minutes et secondes
-    print (annees ,semaines ,jours ,heures ,minutes ,secondes)
+   
 
     return (annees ,semaines ,jours ,heures ,minutes ,secondes)
-
-
-secondes = int(input("Entrer les secondes: "))
-print(decomposer(secondes))
 ```
-
-    Entrer les secondes: 633323104
-    20 4 2 3 5 4
-    (20, 4, 2, 3, 5, 4)
-    
+```python
+Entrer les secondes: 633323104
+> 20 années, 4 semaines, 2 jours, 3 heures, 5 minutes et 4 secondes
+```    
 
 ## Exercice 4:
 Completer la fonction *pointDeRencontre()* qui calcule la position du point de rencontre entre deux véhicules se déplaçant l’un vers l’autre à une vitesse respective de v1 et v2 et se trouvant à une distance d. Considérez que le véhicule 1 se trouve initialement au point 0 et que les vitesses sont constantes.
