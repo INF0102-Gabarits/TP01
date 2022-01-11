@@ -1,9 +1,9 @@
 ## Exercice 1:
-Dans cette exercice vous devez compléter la fonction *fizzBuzz()* qui prend en entrée un nombre n.
-- Imprimer fizz si n est un multiple de 3     
-- Imprimer buzz s’il s’agit d’un multiple de 5     
-- Imprimer fizzbuzz s’il s’agit à la fois d’un multiple de 3 et 5     
-- Imprimer ledit chiffre autrement.
+Dans cette exercice vous devez compléter la fonction *fizzBuzz()* qui prend en entrée un nombre *n* et retourne la bonne valeur selon la valeur de *n*.
+- Retourne *fizz* si *n* est un *multiple de 3*     
+- Imprimer *buzz* s’il s’agit d’un *multiple de 5*    
+- Imprimer *fizzbuzz* s’il s’agit à la fois d’un *multiple de 3 et 5 *    
+- Retourn *n*
 
 Il suffit de compléter la fonction `fizzBuzz()`.
 
@@ -12,24 +12,15 @@ Il suffit de compléter la fonction `fizzBuzz()`.
 def fizzBuzz(n):
     # TODO imprimer la chaine de caractère appropriée avec la fonction print().
     #  Assigner ensuite la valeur à la variable resultat
-    if n%3 == 0:
-        if n%5 == 0:
-            resultat = "fizzbuzz"
-        else:
-            resultat = "fizz"
-    elif n%5 == 0:
-        resultat = "buzz"
-    else:
-        resultat = n
+
 
     return resultat
 
-n = int(input("indiquez le nombre: "))
+n = int(input("Veuillez saisir un nombre: "))
 print(fizzBuzz(n))
 ```
-
-    indiquez le nombre: 8
-    8
+Veuillez saisir un le nombre: 8
+> 8
     
 
 ## Exercice 2:
