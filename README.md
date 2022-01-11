@@ -1,8 +1,8 @@
 ## Exercice 1:
-Dans cette exercice vous devez compléter la fonction *fizzBuzz()* qui prend en entrée un nombre *n* et retourne la bonne valeur selon la valeur de *n*.
-- Retourne *fizz* si *n* est un *multiple de 3*     
-- Imprimer *buzz* s’il s’agit d’un *multiple de 5*    
-- Imprimer *fizzbuzz* s’il s’agit à la fois d’un *multiple de 3 et 5 *    
+Dans cette exercice vous devez compléter la fonction **fizzBuzz()** qui prend en entrée un nombre **n** et retourne la bonne valeur selon la valeur de **n**.
+- Retourne **fizz** si *n* est un **multiple de 3**     
+- Imprimer **buzz** s’il s’agit d’un **multiple de 5**    
+- Imprimer **fizzbuzz** s’il s’agit à la fois d’un **multiple de 3 et 5 **    
 - Retourn *n*
 
 Il suffit de compléter la fonction `fizzBuzz()`.
