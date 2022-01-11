@@ -160,7 +160,7 @@ Si par exemple le véhicule 1 se déplace à une vitesse de 2 unités de distanc
 Il suffit de compléter la fonction `pointDeRencontre()`.
 .
 <p align="center">
-     <img src="img/imgExoPointRencontre.png?raw=true"/>
+     <img src="Img/imgExoPointRencontre.png?raw=true"/>
 </p>
 
 
