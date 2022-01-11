@@ -1,9 +1,3 @@
-# À compléter
-
-<!--- Changer la date de remise en modifiant le URL--->
-#### :alarm_clock: [Date de remise](https://www.timeanddate.com/countdown/generic?iso=20210131T2359&p0=165&msg=Remise&font=cursive&csz=1#)
-
-
 ## Exercice 1:
 Le problème suivant est appelé FizzBuzz. Vous devez compléter la fonction *fizzBuzz()* qui prend en entrée un nombre n.
 
@@ -362,7 +356,7 @@ Dans cet exercice, vous devez écrire un programme qui permet de calculer une va
 L’idée est la suivante : si on insère un cercle de rayon 1 (soit un cerle d'aire égale à $\pi$) dans un carré de côté 2 (et donc d’aire égale à $4$ ), la probabilité qu’un point placé aléatoirement dans le carré soit également dans le cercle est donc de $\dfrac{\pi}{4}$ (le rapport des aires).
 
 <p align="center">
-     <img src="img/PiBoard.png?raw=true"/>
+     <img src="Img/PiBoard.png?raw=true"/>
 </p>
 
 Afin d'estimer la valeur de $\pi$, voici la procédure que vous devez implémenter :
@@ -619,7 +613,7 @@ Une expression est bien parenthésée si le nombre de parenthèses ouvrantes est
 
 Dans cet exercice l'utilisateur va entrer une expression et, si l'expression est mal parenthésée, la fonction retourne "Incorrect", sinon elle retourne la même expresion, mais en insérant des '.' à chaque fois qu'une parenthèse ouvrante est suivie d'une parenthèse fermante. Voici un exemple pour illustrer ce qui est attendu:
 <p align="center">
-     <img src="img/output_parentheses.png?raw=true"/>
+     <img src="Img/output_parentheses.png?raw=true"/>
 </p>
 
 
@@ -637,7 +631,7 @@ print(ValideExpression(expression))
 ```
 
 <p align="center">
-     <img src="img/balle.png?raw=true"/>
+     <img src="Img/balle.png?raw=true"/>
 </p>
 Dans cet exercice, vous devez écrire un programme qui détermine le nombre de rebonds effectué par la balle avant que la hauteur du rebond soit inferieure à 0.01 mètre. Les données à lire du clavier sont : la hauteur initiale, le coefficient de rebond.
 
@@ -691,11 +685,11 @@ Voici à quoi ressemble la structure de la variable <b>emails:</b>
 </p>
 Vous devez calculer, pour les mots du <b>Body</b> de chaque courriel, la probabilité que le mot soit dans un <b>spam</b> ou dans un <b>ham</b>. Par exemple, la probabilité qu'un mot soit dans un <b>spam</b> se calcule ainsi: 
 <p align="center">
-     <img src="img/spamss.PNG?raw=true"/>
+     <img src="Img/spamss.PNG?raw=true"/>
 </p>
 À l'inverse, la probabilité qu'un mot soit dans un <b>ham</b> se calcule ainsi:
 <p align="center">
-     <img src="img/hams.PNG?raw=true"/>
+     <img src="Img/hams.PNG?raw=true"/>
 </p>
 Finalement, ces probabilités seront insérés dans un dictionnaire où l'on distiguera le résultat pour les spams de ceux des hams ainsi :
 <p align="center">
