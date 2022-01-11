@@ -1,6 +1,5 @@
 ## Exercice 1:
-Le problème suivant est appelé FizzBuzz. Vous devez compléter la fonction *fizzBuzz()* qui prend en entrée un nombre n.
-
+Dans cette exercice vous devez compléter la fonction *fizzBuzz()* qui prend en entrée un nombre n.
 - Imprimer fizz si n est un multiple de 3     
 - Imprimer buzz s’il s’agit d’un multiple de 5     
 - Imprimer fizzbuzz s’il s’agit à la fois d’un multiple de 3 et 5     
