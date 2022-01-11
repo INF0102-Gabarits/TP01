@@ -19,7 +19,7 @@ def fizzBuzz(n):
 n = int(input("Veuillez saisir un nombre: "))
 print(fizzBuzz(n))
 ```
-> Veuillez saisir un le nombre: 8
+Veuillez saisir un le nombre: 8
 > 8
     
 
