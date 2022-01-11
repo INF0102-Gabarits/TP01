@@ -680,17 +680,21 @@ Le fichier `email.json` à été sauvegardé dans la variable 'emails' sous form
             emails = json.load(json_data)
 ```
 Voici à quoi ressemble la structure de la variable <b>emails:</b>
+
 <p align="center">
-     <img alt="figure 6.1" src="Img/new1.PNG?raw=true"/>
+     <img title="figure 6.2" src="Img/new1.png?raw=true"/>
 </p>
+
 Vous devez calculer, pour les mots du <b>Body</b> de chaque courriel, la probabilité que le mot soit dans un <b>spam</b> ou dans un <b>ham</b>. Par exemple, la probabilité qu'un mot soit dans un <b>spam</b> se calcule ainsi: 
+
 <p align="center">
-     <img src="Img/spamss.PNG?raw=true"/>
+     <img title="figure 6.2" src="Img/spamss.png?raw=true"/>
 </p>
+
 À l'inverse, la probabilité qu'un mot soit dans un <b>ham</b> se calcule ainsi:
 
 <p align="center">
-     <img src="Img/hams.PNG?raw=true"/>
+     <img title="figure 6.2" src="Img/hams.png?raw=true"/>
 </p>
 
 Finalement, ces probabilités seront insérés dans un dictionnaire où l'on distiguera le résultat pour les spams de ceux des hams ainsi :
