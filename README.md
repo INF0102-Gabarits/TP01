@@ -15,9 +15,6 @@ def fizzBuzz(n):
 
 
     return resultat
-
-n = int(input("Veuillez saisir un nombre: "))
-print(fizzBuzz(n))
 ```
 
 ```python
@@ -28,7 +25,7 @@ Veuillez saisir un le nombre: 8
 ## Exercice 2:
 Dans cet exercice, vous devez résoudre une équation quadratique de la forme: $ax^2 + bx + c$
 
-Le programme commence en demandant à l'utilisateur de saisir la valeur des variables `a`, `b` et `c`. Il suffit de compléter la fonction `resoudreEquation()`.
+Le programme commence en demandant à l'utilisateur de saisir la valeur des variables **a, b et c**. Il suffit de compléter la fonction `resoudreEquation()`.
 
 
 ```python
@@ -37,14 +34,14 @@ import math
 
 def resoudreEquation(a, b, c):
     # TODO: Calculer le discriminant et assigner la valeur dans la variable "delta"
-    delta = b * b - 4 * a * c
 
     # TODO: Déterminer la condition (bool) qui correspond à aucune solution de l'équation 
 
     if delta < 0:
         # ces ligne de code seront executé si il y'a aucune racine
         # TODO: afficher sur l'écran "Aucune racine"
-        print("Aucune racine")
+       
+       
         # ne pas modifier
         return None
 
@@ -52,42 +49,33 @@ def resoudreEquation(a, b, c):
         # ces ligne de code seront executé si il y'a une seule racine
         x1 = 0
         # TODO: afficher sur l'écran "Une seule racine"
-        print("Une seule racine")
+        
         # TODO: assigner a la variable x1 la valeur de la racine
-        x1 = -b/(2*a)
+       
         # ne pas modifier
         return x1
 
     # TODO: Déterminer la condition (bool) qui correspond à deux solutions de l'équation 
     if delta > 0:
         # TODO: afficher sur l'écran "Deux racines"
-        print("Deux racine")
-        # ne pas modifier
 
         # TODO: calculer la prmiere racine, assigner la a "x1"
-        x1 = (-b - math.sqrt(delta)) / (2 * a)
+        
 
         # TODO: calculer la deuxieme racine, assigner la a "x2"
-        x2 = (-b + math.sqrt(delta)) / (2 * a)
+        
 
         # ne pas modifier cette ligne
         return x1, x2
-
-
-
-a = int(input("Entrez a, non nul: "))
-b = int(input("Entrez b: "))
-c = int(input("Entrez c: "))
-
-print(resoudreEquation(a, b, c))
 ```
 
-    Entrez a, non nul: 3
-    Entrez b: 2
-    Entrez c: 4
-    Aucune racine
-    None
-    
+```python
+Entrez a, non nul: 3
+Entrez b: 2
+Entrez c: 4
+> Aucune racine
+> None
+```    
 
 ## Exercice 3:
 Dans cet exercice vous devez convertir un nombre de secondes en nombres d'années, semaines, jours, heures, minute et secondes. Par exemple, si l'utilisateur entre '633323104' secondes, votre programme devra renvoyé 20 années, 4 semaines, 2 jours, 3 heures, 5 minutes et 4 secondes. Vous pouvez créer d'autres variables pour vous aider.
