@@ -688,10 +688,13 @@ Vous devez calculer, pour les mots du <b>Body</b> de chaque courriel, la probabi
      <img src="Img/spamss.PNG?raw=true"/>
 </p>
 À l'inverse, la probabilité qu'un mot soit dans un <b>ham</b> se calcule ainsi:
+
 <p align="center">
      <img src="Img/hams.PNG?raw=true"/>
 </p>
+
 Finalement, ces probabilités seront insérés dans un dictionnaire où l'on distiguera le résultat pour les spams de ceux des hams ainsi :
+
 <p align="center">
      <img title="figure 6.2" src="Img/result_spam.png?raw=true"/>
 </p>
