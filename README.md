@@ -681,7 +681,7 @@ Le fichier `email.json` à été sauvegardé dans la variable 'emails' sous form
 ```
 Voici à quoi ressemble la structure de la variable <b>emails:</b>
 <p align="center">
-     <img alt="figure 6.1" src="img/new1.PNG?raw=true"/>
+     <img alt="figure 6.1" src="Img/new1.PNG?raw=true"/>
 </p>
 Vous devez calculer, pour les mots du <b>Body</b> de chaque courriel, la probabilité que le mot soit dans un <b>spam</b> ou dans un <b>ham</b>. Par exemple, la probabilité qu'un mot soit dans un <b>spam</b> se calcule ainsi: 
 <p align="center">
@@ -693,7 +693,7 @@ Vous devez calculer, pour les mots du <b>Body</b> de chaque courriel, la probabi
 </p>
 Finalement, ces probabilités seront insérés dans un dictionnaire où l'on distiguera le résultat pour les spams de ceux des hams ainsi :
 <p align="center">
-     <img title="figure 6.2" src="img/result_spam.png?raw=true"/>
+     <img title="figure 6.2" src="Img/result_spam.png?raw=true"/>
 </p>
 
 Vous n'avez pas besoin d'arrondir le résultat.
@@ -744,7 +744,7 @@ Les problèmes de tri font partie des problèmes les plus célèbres en informat
 C'est là que l'algorithme de tri par fusion (merge sort) se démarque du tri par sélection vu au dernier TP. Bien que ce dernier fonctionne... Il est très lent à comparer du tri par fusion.
 Cet algorithme n'est toutefois pas le plus rapide existant, mais il est une bonne introduction au monde de l'algorithmie. De plus, celui-ci utilise le principe de récursivité, qui est une notion importante à comprendre, ainsi que le principe de *diviser pour régner* qui est un *patron* important en algorithmie.
 
-![merge-sort](./img/Merge-Sort-Algorithm.png)
+![merge-sort](./Img/Merge-Sort-Algorithm.png)
 > Schéma du tri par fusion 
 
 La fonction *.sort()* de Python, par exemple, utilise une variation de l'algorithme *merge sort*, soit le [Timsort](https://en.wikipedia.org/wiki/Timsort).
