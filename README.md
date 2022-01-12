@@ -25,7 +25,9 @@ Veuillez saisir un le nombre: 8
 ## Exercice 2:
 Dans cet exercice, vous devez résoudre une équation quadratique de la forme: $ax^2 + bx + c$
 
-Le programme commence en demandant à l'utilisateur de saisir la valeur des variables **a, b et c**. Il suffit de compléter la fonction `resoudreEquation()`.
+Le programme commence en demandant à l'utilisateur de saisir la valeur des variables **a, b et c**. 
+
+Il suffit de compléter la fonction `resoudreEquation()`.
 
 
 ```python
