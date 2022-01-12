@@ -114,16 +114,15 @@ Entrer les secondes: 633323104
 ```    
 
 ## Exercice 4:
-Completer la fonction *pointDeRencontre()* qui calcule la position du point de rencontre entre deux véhicules se déplaçant l’un vers l’autre à une vitesse respective de v1 et v2 et se trouvant à une distance d. Considérez que le véhicule 1 se trouve initialement au point 0 et que les vitesses sont constantes.
+Dans cette exercice vous devez calculer la position du point de rencontre entre deux véhicules se déplaçant l’un vers l’autre à une vitesse respective de **v1** et **v2** et se trouvant à une distance **d**. Considérez que le **véhicule 1** se trouve initialement au **point 0** et que les vitesses sont constantes.
 
-Si par exemple le véhicule 1 se déplace à une vitesse de 2 unités de distance par unité de temps, que le véhicule 2 se déplace à une vitesse de 1 unité de distance par une unité de temps et que les deux véhicules se trouvent à 12 unités de distance, ils se rencontreront au point situé à 8 unités de distance de la position initiale du véhicule 1.
+Si par exemple le **véhicule 1** se déplace à une vitesse de **2 unités de distance par unité de temps**, que le **véhicule 2** se déplace à une vitesse de **1 unité de distance par une unité de temps** et que les deux véhicules se trouvent à **12 unités de distance**, ils se rencontreront au point situé à **8 unités de distance** de la position initiale du **véhicule 1**.
 
-Il suffit de compléter la fonction `pointDeRencontre()`.
-.
 <p align="center">
      <img src="Img/imgExoPointRencontre.png?raw=true"/>
 </p>
 
+Il suffit de compléter la fonction `pointDeRencontre()`.
 
 ```python
 def pointDeRencontre(v1, v2, distance):
@@ -133,15 +132,17 @@ def pointDeRencontre(v1, v2, distance):
     positionRencontre =
 
     return positionRencontre
+```
 
-v1 = int(input("Entrez v1: "))
-v2 = int(input("Entrez v2: "))
-distance = int(input("Entrez la distance: "))
-print(pointDeRencontre(v1, v2, distance))
+```python
+v1 = int(input("Entrez v1: 2
+v2 = int(input("Entrez v2: 1
+Entrez la distance: 12
+> 8
 ```
 
 ## Exercice 5: 
-Dans cet exercice vous devez convertir une date (jour, mois, année) entré par l'utilisateur en jour de la semaine. Par exemple, si l'utilisateur entre 4 pour le jour, 2 pour le mois et 2021 pour l'année,la fonction va retourner jeudi. Pour cela, nous allons utiliser la formule de la congruence de Zeller.
+Dans cet exercice vous devez convertir **une date (jour, mois, année)** entré par l'utilisateur en **jour de la semaine**. Par exemple, si l'utilisateur entre **4 pour le jour, 2 pour le mois et 2021 pour l'année**,la fonction va retourner **jeudi**. Pour cela, nous allons utiliser la formule de **la congruence de Zeller**.
 
 ![Zeller's congruence](https://wikimedia.org/api/rest_v1/media/math/render/svg/0f95195dcc0d98b351294277071736e97053324e)
 
@@ -174,19 +175,14 @@ def convertirJour(j) :
 
 def trouverJourSemaine(annee, mois, jour):
     # TODO: Calculer p
-    p = (14 - mois) // 12
 
     # TODO: Calculer q
-    q = annee - p
 
     # TODO: Calculer r
-    r = q + q // 4 - q // 1000 + q // 400
 
     # TODO: Calculer s
-    s = mois + 12 * p - 2
 
     # TODO: Calculer t 
-    t = ((jour + r + 31 * s) // 12) % 7
 
     # Convertir le résultat de la formule de Zeller
     jour_semaine = convertirJour(t)
@@ -194,23 +190,14 @@ def trouverJourSemaine(annee, mois, jour):
     # TODO: Afficher le jour de la semaine
 
     return jour_semaine
-
-annee = int(input("Entrer l'annee: "))
-mois = int(input("Entrer le mois: "))
-jour = int(input("Entrer le jour: "))
-trouverJourSemaine(annee, mois, jour)
 ```
 
-    Entrer l'annee: 2022
-    Entrer le mois: 1
-    Entrer le jour: 10
-    
-
-
-
-
-    'Lundi'
-
+```python
+Entrer l'annee: 2022
+Entrer le mois: 1
+Entrer le jour: 10
+> 'Lundi'
+```
 
 
 ## Exercice 6:
@@ -218,35 +205,22 @@ Dans cet exercice, vous devez calculer le nombre de chiffres qui compose un nomb
 
 
 ```python
-import math
-
-
 def calculerNombreChiffres(nombre):
 
     # TODO: Déterminer le nombre de chiffres de "nombre" et mettre la valeur dans "nombreDeChiffres"
-    nombreDeChiffres = math.floor(math.log10(nombre + 1)) + 1
 
     # TODO: Afficher la valeur de "nombreDeChiffres"
     return nombreDeChiffres
-
-
-
-nombre = int(input('veuillez indiquer un nombre strictement postif: '))
-calculerNombreChiffres(nombre)
 ```
 
-    veuillez indiquer un nombre strictement postif: 1000
-    
-
-
-
-
-    4
-
+```python
+veuillez indiquer un nombre strictement postif: 1000
+> 4
+```
 
 
 ## Exercice 7:
-Dans cet exercice, vous devez écrire un programme qui combine deux dictionnaires dans un 3e dictionnaire en gardant la valeur maximale des clés communes.  
+Dans cet exercice, vous devez écrire un programme qui combine deux dictionnaires dans un 3e dictionnaire en additionnant les valeurs des clés communes.  
 **Exemple :**
 ```python
 dic_1 = {'a': 5, 'b': 2, 'c':9}
@@ -258,23 +232,15 @@ dic_3 = {'a': 5, 'b': 8, 'd': 17, 'c': 9}
 ```python
 def combineDic(dic_1, dic_2):
     # TODO Compléter la fonction afin de combiner dic_1 et dic_2
-    #      en gardant la valeur max en cas de clef commune
-    dic_3 = dict.fromkeys(list(dic_1.keys()) + list(dic_2.keys()))
+    # en additionnant les valeurs des clés communes
 
-    for i in dic_3.keys():
-        dic_3[i]  = (dic_1[i] if i in dic_1.keys() else 0)
-        dic_3[i] += (dic_2[i] if i in dic_2.keys() else 0)
 
     return dic_3
-
+```
 dic_1 = {'a': 5, 'b': 2, 'c': 9}
 dic_2 = {'a': 1, 'b': 8, 'd': 17}
-
-dic_3 = combineDic(dic_1,dic_2)
-print(dic_3)
-```
-
-    {'a': 6, 'b': 10, 'c': 9, 'd': 17}
+combineDic(dic_1,dic_2)
+> {'a': 6, 'b': 10, 'c': 9, 'd': 17}
     
 
 ## Exercice 8:
@@ -295,27 +261,21 @@ Nous ferons un tri par ordre croissant ce qui donnera :
 val = [5,8,1,9,6,2,4,3,7,5]
 sorted_val = [1,2,3,4,5,5,6,7,8,9]
 ```
-**ATTENTION** Un *pseudo-code* est une façon de décrire un algorithme qui ne prend pas en compte les spécificités du language.
-Mais dans le cas présent les tableaux sont quand même considérés comme commençant à 0.
-
+**ATTENTION** Un *pseudo-code* est une façon de décrire un algorithme qui ne prend pas en compte les spécificités du language. Mais dans le cas présent les tableaux sont quand même considérés comme commençant à 0.
 
 ```python
 def triBulles(tab):
     # TODO écrire l'algorithme du tri à bulle comme décrit dans l'énoncé
-    n = len(tab)
-    for i in range(n-1, 0,-1):
-        for j in range(i):
-            if tab[j+1] < tab[j]:
-                tab[j], tab[j+1] = tab[j+1], tab[j]
-    return tab
 
+    return tab
+```
+
+```python
 val = [5,8,1,9,6,2,4,3,7,5]
 sorted_val = triBulles(val)
 print(val)
-```
-
-    [1, 2, 3, 4, 5, 5, 6, 7, 8, 9]
-    
+> [1, 2, 3, 4, 5, 5, 6, 7, 8, 9]
+```    
 
 ## Exercice 9:
 Dans cet exercice, vous devez écrire un programme qui permet de calculer une valeur approchée de $\pi$ par la méthode de Monte‐Carlo basée sur les probabilités.
