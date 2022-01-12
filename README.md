@@ -162,6 +162,7 @@ Afin de vous faciliter la tâche, la formule a été simplifié en plusieurs ét
 
 Une fois ces étapes finies, le résultat t est convertir en jour. Finalement, il faut l'afficher.
 
+Il suffit de compléter la fonction `trouverJourSemaine()`.
 
 ```python
 def convertirJour(j) :
@@ -203,8 +204,9 @@ Entrer le jour: 10
 
 
 ## Exercice 6:
-Dans cet exercice, vous devez calculer le nombre de chiffres qui compose un nombre indiqué par l'utilisateur. Cepandant, vous ne pouvez utiliser que les fonctions de la libraire Math.
+Dans cet exercice, vous devez calculer le nombre de chiffres qui compose un nombre indiqué par l'utilisateur. Cepandant, vous ne pouvez utiliser que les fonctions de la libraire `Math`.
 
+Il suffit de compléter la fonction `calculerNombreChiffres(nombre)`.
 
 ```python
 def calculerNombreChiffres(nombre):
@@ -224,12 +226,6 @@ veuillez indiquer un nombre strictement postif: 1000
 ## Exercice 7:
 Dans cet exercice, vous devez écrire un programme qui combine deux dictionnaires dans un 3e dictionnaire en additionnant les valeurs des clés communes.  
 **Exemple :**
-```python
-dic_1 = {'a': 5, 'b': 2, 'c':9}
-dic_2 = {'a': 1, 'b': 8, 'd':17}
-dic_3 = {'a': 5, 'b': 8, 'd': 17, 'c': 9}
-```
-
 
 ```python
 def combineDic(dic_1, dic_2):
@@ -239,11 +235,12 @@ def combineDic(dic_1, dic_2):
 
     return dic_3
 ```
+```python
 dic_1 = {'a': 5, 'b': 2, 'c': 9}
 dic_2 = {'a': 1, 'b': 8, 'd': 17}
 combineDic(dic_1,dic_2)
 > {'a': 6, 'b': 10, 'c': 9, 'd': 17}
-    
+```
 
 ## Exercice 8:
 Lors de la manipulation de liste il est commun de vouloir trier les valeurs qui la compose.
